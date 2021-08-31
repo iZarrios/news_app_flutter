@@ -62,8 +62,8 @@ Widget buildTaskItem(Map model, context) => Dismissible(
 
 Widget buildArticleItem(article, context) => InkWell(
       onTap: () {
-        // print(article["url"]);
-        // navigateTo(context, WebViewScreen(url: article["url"]));
+        print(article["url"]);
+        navigateTo(context, WebViewScreen(url: article["url"]));
       },
       child: Padding(
         padding: const EdgeInsets.all(10.0),
